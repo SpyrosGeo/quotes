@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+<div class="container mt-1">
+  <div class="jumbotron">
+    <h1 class="display-3">A database of PeKouliar Quotes</h1>
+    <p class="lead"></p>
+  </div>
+  <% quotes.forEach(function(quote){ %>
+    <div class="">
+      <h1 class="display-5"><%= quote.title %></h1>
+    </div>
+    <div class="">
+      <p><%= quote.body %></p>
+      <small>-Koulis</small>
+    </div>
+  <% }); %>
+</div>
+<% include ./partials/footer %>

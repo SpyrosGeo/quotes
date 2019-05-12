@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+<div class="container mt-2">
+
+
+<form action="/quotes" method="post">
+  <div class="form-group">
+    <label for="">Title</label>
+    <input class="form-control" type="text" name="quote[title]" placeholder="title">
+  </div>
+  <div class="form-group">
+    <label for="">Quote Content</label>
+    <textarea class="form-control"name="quote[body]" rows="8" cols="80" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<% include ./partials/footer %>
